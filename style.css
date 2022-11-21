@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #48773E;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #305F26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+h1 {
+    margin: 5%;
+}
+
+article {
+    padding: 5%;
+}
+
+article,
+.ntnu-logo {
+    background-color: rgba(154, 154, 154, 0.5);
+}
+
+article h2,
+p {
+    margin-bottom: 8px;
+}
+
+.goal13 {
+    display: flex;
+    justify-content: center;
+}
+
+.goal13 img {
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10%;
+}
+
+.ntnu-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+}
+
+.ntnu-logo img {
+    width: 200px;
+    padding-bottom: 5%;
+}
+
+.ntnu-logo p {
+    text-align: center;
+}
+
+.personal-credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.personal-credit p {
+    width: 70%;
+}
+
+/* Game page socials */
+
+.social {
+    margin: 20px 18%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social img {
+    margin: 5px 5px 5px 0;
+}
+
+.social p span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+ /* Contact page */
+
+ .form-left {
+    background-color: #305F26;
+    padding: 10%;
+    border-radius: 5px;
+}
+
+.name, .email, .rating, .textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=emailaddr] {
+    height: 40px;
+    width: 270px;
+}
+
+select {
+    width: 100px;
+    height: 25px;
+}
+
+input[type=text],
+input[type=emailaddr],
+textarea,
+select {
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=emailaddr],
+textarea,
+select {
+    border: 1px solid #5A5A5A;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+.form-right {
+    margin-bottom: 5%;
+}
+
+/* Over 600px */
