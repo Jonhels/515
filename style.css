@@ -88,6 +88,18 @@ p {
     font-style: italic;
 }
 
+
+.game-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.game-img img {
+    width: 100%;
+}
+
 /* Contact page */
 
 .form-left {
