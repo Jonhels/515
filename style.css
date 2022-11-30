@@ -202,7 +202,7 @@ textarea {
 
 textarea,
 .personal-credit p {
-    width: 300px;
+    width: 300px auto;
 }
 
 textarea,
