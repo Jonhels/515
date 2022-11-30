@@ -6,34 +6,88 @@
 
 body {
     background-color: #48773E;
-    color: #FFFFFF;
+}
+
+body,
+textarea,
+input[type=text],
+input[type=email] {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body,
+nav ul li a,
+.social a {
+    color: #FFFFFF
+}
+
 nav {
-    background-color: #305F26;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 50px;
+}
+
+nav,
+nav ul,
+main,
+.goal13,
+.social,
+.social a,
+.game-img,
+.name,
+.email,
+.rating,
+.feedback,
+.ntnu-logo,
+.personal-credit {
+    display: flex;
+}
+
+nav,
+.goal13,
+.personal-credit {
+    justify-content: center;
+}
+
+nav,
+.social a,
+.game-img,
+.ntnu-logo,
+.personal-credit {
+    align-items: center;
+}
+
+nav,
+.form-wrap {
+    background-color: #305F26;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
     justify-content: space-between;
+}
+
+nav ul,
+.goal13 img,
+.ntnu-logo img {
     width: 250px;
 }
 
-nav ul li a {
+nav ul li a,
+.social a {
     text-decoration: none;
-    color: #FFFFFF;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
     margin: 20px 0 0 0;
+}
+
+main,
+.social,
+.name,
+.email,
+.rating,
+.feedback,
+.ntnu-logo {
+    flex-direction: column;
 }
 
 h1 {
@@ -54,29 +108,11 @@ p {
     margin-bottom: 8px;
 }
 
-.goal13 {
-    display: flex;
-    justify-content: center;
-}
-
-.goal13 img {
-    width: 250px;
-}
-
 /* Game page socials */
 
 .social {
     margin: 20px 18%;
     border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-}
-
-.social a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #FFFFFF;
 }
 
 .social img {
@@ -88,23 +124,29 @@ p {
     font-style: italic;
 }
 
-
 .game-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
 }
 
-.game-img img {
+.game-img img,
+iframe,
+.ntnu-logo,
+.personal-credit {
     width: 100%;
 }
 
 /* Contact page */
 
 .form-wrap {
-    background-color: #305F26;
     padding: 10%;
+}
+
+.form-wrap,
+input[type=text],
+input[type=email],
+textarea,
+select,
+article {
     border-radius: 5px;
 }
 
@@ -112,8 +154,6 @@ p {
 .email,
 .rating,
 .feedback {
-    display: flex;
-    flex-direction: column;
     justify-content: left;
 }
 
@@ -128,14 +168,20 @@ input[type=email] {
 }
 
 select {
-    width: 100px;
     height: 25px;
+}
+
+button,
+select {
+    width: 100px;
+    ;
 }
 
 input[type=text],
 input[type=email],
 textarea,
-select {
+select,
+.ntnu-logo {
     margin-bottom: 10px;
 }
 
@@ -144,27 +190,28 @@ input[type=email],
 textarea,
 select {
     border: 1px solid #5A5A5A;
-    border-radius: 5px;
     padding-left: 10px;
 }
 
 textarea {
     resize: none;
-    width: 300px;
     height: 200px;
     margin-top: 5px;
     padding: 10px;
 }
 
 textarea,
+.personal-credit p {
+    width: 300px;
+}
+
+textarea,
 input[type=text],
 input[type=email] {
     font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
-    width: 100px;
     height: 30px;
 }
 
@@ -175,22 +222,15 @@ button {
 /* Footer */
 
 iframe {
-    width: 100%;
     height: 400px;
     margin-bottom: 40px;
 }
 
 .ntnu-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
     padding-bottom: 20px;
 }
 
 .ntnu-logo img {
-    width: 250px;
     padding-bottom: 10px;
 }
 
@@ -199,23 +239,17 @@ iframe {
 }
 
 .personal-credit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     margin: 20px 0;
-}
-
-.personal-credit p {
-    width: 300px;
 }
 
 /* Over 600px */
 @media only screen and (min-width: 600px) {
 
-    main {
+    main,
+    .form-wrap {
         align-items: center;
     }
+
 
     .goal13 {
         margin-bottom: 20px;
@@ -227,7 +261,6 @@ iframe {
 
     article {
         margin: 0 10% 20px 10%;
-        border-radius: 5px;
         width: 68%;
     }
 
@@ -238,7 +271,6 @@ iframe {
 
     .form-wrap {
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 }
