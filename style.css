@@ -200,9 +200,12 @@ textarea {
     padding: 10px;
 }
 
-textarea,
+textarea{
+    width: 250px;
+}
+
 .personal-credit p {
-    width: 300px auto;
+    width: 300px;
 }
 
 textarea,
